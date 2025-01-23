@@ -1,0 +1,218 @@
+.webNavbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to left, var(--white), var(--aqua));
+}
+
+.webNavbarTitleLink {
+    font-family: 'roboto-regular', serif;
+    font-size: 26px;
+    color: var(--blue);
+    text-decoration: none;
+}
+.webNavbarTitleLink:hover {
+    font-size: 27px;
+}
+
+.webNavbarPages {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.webNavbarLinks {
+    display: flex;
+}
+
+.webNavbarLinks ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.webNavbarLinks li {
+    display: flex;
+    justify-content: space-around;
+}
+
+.webNavbarLinksLink {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'roboto-regular', serif;
+    font-size: 16px;
+    color: var(--gray);
+}
+.webNavbarLinksLink:hover {
+    font-size: 17px;
+    color: var(--yellow)
+}
+
+.webNavbarButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.webNavbarButtonsFirstButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 109px;
+    height: 26px;
+    background-color: var(--darkBlue);
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+.webNavbarButtonsFirstButton:hover {
+    width: 110px;
+    height: 27px;
+}
+
+.webNavbarButtonsFirstButtonText {
+    color: var(--white);
+    font-family: 'roboto-medium', serif;
+    font-size: 12px;
+}
+
+.webNavbarButtonsSecondButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 109px;
+    height: 26px;
+    background-color: var(--yellow);
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+.webNavbarButtonsSecondButton:hover {
+    width: 110px;
+    height: 27px;
+}
+
+.webNavbarButtonsSecondButtonText {
+    color: var(--darkBlue);
+    font-family: 'roboto-medium', serif;
+    font-size: 12px;
+}
+
+.webNavbarLinksMenu {
+    display: none;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    fill: var(--darkBlue);
+    cursor: pointer;
+    background: none;
+}
+
+.webNavbarLinksMenu:hover {
+    fill: var(--blue);
+}
+
+.webNavbarLinksDelete {
+    display: none;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    fill: var(--white);
+    cursor: pointer;
+    background: none;
+}
+.webNavbarLinksDelete:hover {
+    fill: var(--yellow);
+}
+
+@media screen and (max-width: 768px) {
+    .webNavbarLinksMenu {
+        display: block;
+    }
+    .webNavbarPages {
+        display: none;
+    }
+    .webNavbarLinksDeleteActive {
+        display: block;
+    }
+    .webNavbarLinks {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .webNavbarLinks ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+    
+    .webNavbarButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        background: var(--darkBlue);
+    }
+    .webNavbarLinksLink {
+        color: var(--white);
+    }
+    .webNavbarButtonsFirstButton {
+        
+        background: var(--white);
+    }
+    .webNavbarButtonsFirstButtonText {
+        color: var(--darkBlue);
+    }
+
+    .webNavbarPagesIsOpen {
+        width: 100%; 
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+        position: absolute;
+        top: 0; 
+        
+        background: var(--darkBlue);
+    }
+    
+    .webNavbarLinksDelete {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-left: 38px;
+    }
+}
+
+@media screen and (max-width: 288px) {
+    * {
+        overflow: hidden;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(100%); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+} 
+.webNavbarPagesIsOpen {
+    animation: slideIn 0.4s; 
+}

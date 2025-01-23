@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--white);
+  min-width: 288px;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: 'roboto-medium';
+  src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: 'roboto-regular';
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+:root {
+  --white: #FFFFFFFF;
+  --aqua: #DCEFDAFF;
+  --darkAqua: #D0E3F3FF;
+  --yellow: #FFDA69FF;
+  --gray: #A8AFCEFF;
+  --darkGray: #60757CFF;
+  --blue: #0148BEFF;
+  --darkBlue: #131C60FF;
+  --blackBlue: #00002CFF;
+}

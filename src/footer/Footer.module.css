@@ -1,0 +1,465 @@
+.mainPageFooter {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkAqua);
+}
+
+.mainPageFooterDetails {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    p {
+        color: var(--darkGray);
+        font-size: 15px;
+        font-family: 'roboto-medium', serif;
+    }
+    .mainPageFooterName {
+        color: var(--blue);
+        font-family: 'roboto-bold', serif;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .mainPageFooterButton {
+        width: 130px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--darkBlue);
+        color: var(--white);
+        cursor: pointer;
+        border-radius: 2px;
+        border: none;
+        font-family: 'roboto-medium';
+        font-size: 14px;
+    }
+}
+.mainPageFooterButton:hover {
+    width: 132px;
+    height: 32px;
+}
+
+.mainPageFooterLine {
+    width: 80%;
+    height: 2px;
+    background-color: var(--gray);
+}
+
+.mainPageFooterLinks {
+    width: 77%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mainPageFooterLinksCenterLine {
+    display: none;
+}
+
+.mainPageFooterLinksOwn {
+    width: 77%;
+}
+
+.mainPageFooterLinksOwn ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.mainPageFooterLinksOwn li {
+    display: flex;
+}
+
+.mainPageFooterLinksOwnPages {
+    text-decoration: none;
+    color: var(--gray);
+    font-family: 'roboto-regular', serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.mainPageFooterLinksOwnPages:hover {
+    color: var(--yellow);
+    font-size: 17px;
+}
+
+.mainPageFooterLinksSocial {
+    width: 100%;
+    display: flex;
+}
+
+.mainPageFooterLinksSocial {
+    width: 20%;
+    a {
+        width: 50%;
+        img {
+            width: 20px;
+        }
+    }
+}
+.socialIcon:hover {
+    width: 22px;
+}
+
+@media  screen and (max-width: 1024px) {
+    .mainPageFooter {
+        height: 210px;
+    }
+    
+    .mainPageFooterDetails {
+        p {
+            font-size: 14.6px;
+        }
+        .mainPageFooterButton {
+            width: 129px;
+            height: 27px;
+            font-size: 13.8px;
+        }
+        .mainPageFooterButton:hover {
+            width: 130px;
+            height: 28px;
+        }
+    }
+
+    .mainPageFooterLine {
+        width: 85%;
+        height: 1.8px;
+    }
+    
+    .mainPageFooterLinks {
+        width: 75%;
+        margin-top: 10px;
+    }
+    
+    .mainPageFooterLinksOwn {
+        width: 75%;
+    }
+    
+    .mainPageFooterLinksOwn ul{
+        gap: 28px;
+    }    
+
+    .mainPageFooterLinksSocial {
+        width: 30%;
+        a {
+            img {
+                width: 19px;
+            }
+        }
+    }
+    .socialIcon:hover {
+        width: 21px;
+    }    
+}
+
+@media  screen and (max-width: 910px) {
+    .mainPageFooter {
+        height: 200px;
+    }
+    
+    .mainPageFooterDetails {
+        p {
+            font-size: 14px;
+        }
+        .mainPageFooterButton {
+            width: 125px;
+            height: 25px;
+            font-size: 13.4px;
+        }
+        .mainPageFooterButton:hover {
+            width: 126px;
+            height: 26px;
+        }
+    }
+
+    .mainPageFooterLinks {
+        width: 80%;
+    }
+    
+    .mainPageFooterLinksOwn {
+        width: 80%;
+    }
+    
+    .mainPageFooterLinksOwn ul{
+        gap: 26px;
+    }    
+
+    .mainPageFooterLinksSocial {
+        a {
+            img {
+                width: 18px;
+            }
+        }
+    }
+    .socialIcon:hover {
+        width: 20px;
+    }    
+}
+
+@media screen and (max-width: 860px) {
+    .mainPageFooterLinks {
+        width: 85%;
+    }
+    
+    .mainPageFooterLinksOwn {
+        width: 85%;
+    }
+    
+    .mainPageFooterLine {
+        width: 90%;
+        height: 1.5px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .mainPageFooterLine {
+        width: 95%;
+        height: 1.5px;
+    }  
+    
+    .mainPageFooterLinks {
+        width: 90%;
+    }
+    
+    .mainPageFooterLinksOwn {
+        width: 90%;
+    }
+    
+    .mainPageFooterLinksOwn ul{
+        gap: 24px;
+    }
+    
+    .mainPageFooterLinksSocial {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mainPageFooter {
+        height: 210px;
+    }
+
+    .mainPageFooterLine {
+        width: 95%;
+        height: 1.5px;
+    }  
+    
+    .mainPageFooterLinks {
+        width: 100%;
+    }
+    
+    .mainPageFooterLinksOwn {
+        width: 90%;
+    }
+    
+    .mainPageFooterLinksOwn ul{
+        gap: 22px;
+    }
+    
+    .mainPageFooterLinksSocial {
+        width: 50%;
+        a {
+            img {
+                width: 18px;
+            }
+        }
+    }
+    .socialIcon:hover {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainPageFooter {
+        height: 220px;
+    }
+
+    .mainPageFooterLine {
+        width: 95%;
+        height: 1.6px;
+    }  
+    
+    .mainPageFooterLinks {
+        width: 100%;
+    }
+    
+    .mainPageFooterLinksOwn {
+        width: 100%;
+    }
+    
+    .mainPageFooterLinksOwn ul{
+        gap: 22px;
+        font-size: 10px;
+    }
+    
+    .mainPageFooterLinksOwnPages {
+        font-size: 14px;
+    }
+    .mainPageFooterLinksOwnPages:hover {
+        font-size: 15px;
+    }
+
+    .mainPageFooterLinksSocial {
+        width: 60%;
+        a {
+            img {
+                width: 17px;
+            }
+        }
+    }
+    .socialIcon:hover {
+        width: 19px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mainPageFooter {
+        height: 450px;
+    }    
+        
+    .mainPageFooterDetails {
+        p {
+            font-size: 14px;
+        }
+        .mainPageFooterName {
+            font-size: 28px;
+        }
+        .mainPageFooterButton {
+            width: 123px;
+            height: 25px;
+            font-size: 12.6px;
+        }
+    }
+    .mainPageFooterButton:hover {
+        width: 124px;
+        height: 26px;
+    }
+
+    .mainPageFooterLine {
+        display: none;
+    }
+
+    .mainPageFooterLinks {
+        width: 77%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 3fr 1fr 2fr;
+        margin-top: 40px;
+    }
+
+    .mainPageFooterLinksCenterLine {
+        display: block;
+        width: 2px;
+        height: 110%;
+        background-color: var(--gray);
+    }
+
+    .mainPageFooterLinksOwn {
+        width: 77%;
+    }
+
+    .mainPageFooterLinksOwn ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .mainPageFooterLinksOwnPages {
+        font-size: 16px;
+    }
+    .mainPageFooterLinksOwnPages:hover {
+        color: var(--yellow);
+        font-size: 17px;
+    }
+
+    .mainPageFooterLinksSocial {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mainPageFooterLinksSocial {
+        width: 20%;
+        a {
+            width: 50%;
+            img {
+                width: 20px;
+            }
+        }
+    }
+    .socialIcon:hover {
+        width: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mainPageFooter {
+        height: 500px;
+    }    
+        
+    .mainPageFooterDetails {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        p {
+            font-size: 14px;
+        }
+        .mainPageFooterName {
+            font-size: 38px;
+        }
+        .mainPageFooterButton {
+            width: 132px;
+            height: 26px;
+            font-size: 13px;
+        }
+    }
+    .mainPageFooterButton:hover {
+        width: 134px;
+        height: 28px;
+    }
+
+    .mainPageFooterLine {
+        display: none;
+    }
+
+    .mainPageFooterLinks {
+        width: 77%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 3fr 1fr 2fr;
+        margin-top: 40px;
+    }
+
+    .mainPageFooterLinksCenterLine {
+        display: block;
+        width: 2px;
+        height: 110%;
+        background-color: var(--gray);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mainPageFooterLinks {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .mainPageFooterLinks {
+        width: 120%;
+    }
+}

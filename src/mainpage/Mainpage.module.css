@@ -1,0 +1,1272 @@
+.mainPageStart {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainPageStartGuide {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'roboto-regular', serif;
+    font-size: 40px;
+    color: var(--blackBlue);
+    line-height: 50px;
+    width: 420px;
+}
+
+.largeP {
+    font-family: 'roboto-regular', serif;
+    font-size: 18px;
+    color: var(--gray);
+    line-height: 30px;
+    width: 420px;
+}
+
+.mainPageStartButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 8px;
+}
+
+.mainPageStartFirstButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 189px;
+    height: 36px;
+    background-color: var(--darkBlue);
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+.mainPageStartFirstButton:hover {
+    width: 191px;
+    height: 38px;
+}
+
+.mainPageStartFirstButtonText {
+    color: var(--white);
+    font-family: 'roboto-medium', serif;
+    font-size: 16px
+}
+
+.mainPageStartSecondButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 189px;
+    height: 36px;
+    background-color: var(--white);
+    border-radius: 2px;
+    border: 3px, solid, var(--darkBlue);
+    cursor: pointer;
+}
+.mainPageStartSecondButton:hover {
+    width: 191px;
+    height: 38px;
+}
+
+.mainPageStartSecondButtonText {
+    color: var(--darkBlue);
+    font-family: 'roboto-medium', serif;
+    font-size: 16px;
+}
+
+.mainPageStartImage {
+    img { 
+        width: 100%;  
+        height: auto; 
+        border: none;
+        object-fit: cover;
+      }    
+}
+
+.mainPageSecond {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainPageSecondGuide {
+    width: 150%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainPageSecondGuideText {  
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        width: 400px;
+        font-family: 'roboto-regular', serif;
+        font-size: 36px;
+        line-height: 48px;
+        color: var(--blackBlue);
+    }
+    p {
+        width: 400px;
+        font-family: 'roboto-regular', serif;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--gray);
+    }
+}
+
+.mainPageSecondTitles {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainPageSecondTitlesTitle {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 36px;
+        height: 36px;
+    }
+    h3 {
+        font-family: 'roboto-medium', serif;
+        font-size: 16px;
+        color: var(--blackBlue);
+        line-height: 26px;
+    }
+    p {
+        font-family: 'roboto-regular', serif;
+        font-size: 12px;
+        color: var(--gray);
+        line-height: 18px;
+    }
+}
+
+.mainPageSecondPicture {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    img {
+        width: 470px;
+        border: none;
+        object-fit: cover;
+    }
+}
+
+.mainPageThird {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainPageThirdPicture {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 480px;
+        height: 315px;
+    }
+}
+
+.mainPageSecondGuide {
+    width: 100%;
+    height: 100%;
+}
+
+.mainPageThird {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainPageThirdLines {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.mainPageThirdPicture {
+    width: 120%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: auto;
+        border: none;
+        object-fit: cover;
+    }
+}
+
+.mainPageThirdGuide {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        width: 420px;
+        font-family: 'roboto-regular', serif;
+        font-size: 36px;
+        line-height: 48px;
+        color: var(--blackBlue);
+    }
+    p {
+        width: 420px;
+        font-family: 'roboto-regular', serif;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--gray);
+    }
+}
+
+.mainPageThirdGuideButton{
+    width: 189px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkBlue);
+    color: var(--white);
+    font-family: 'roboto-medium', serif;
+    font-size: 14px;
+    margin-right: auto;
+    border-radius: 2px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.mainPageThirdGuideButton:hover {
+    width: 191px;
+    height: 34px;
+}
+
+.mainPageFinish {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainPageFinishGradient {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, var(--white),  var(--aqua));
+}
+
+.mainPageFinishGuide {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--aqua);
+    padding: 150px;
+    h2 {
+        display: flex;
+        justify-content: center;
+        width: 420px;
+        font-family: 'roboto-medium', serif;
+        font-size: 36px;
+        line-height: 48px;
+        color: var(--blackBlue);
+    }
+    .mainPageFinishGuideDiscription {
+        width: 600px;
+        font-family: 'roboto-regular', serif;
+        font-size: 16px;
+        line-height: 28px;
+        color: var(--gray);
+        margin-bottom: 50px;
+    }
+    span {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        font-family: 'roboto-medium', serif;
+        font-size: 50px;
+        color: var(--darkBlue);
+    }
+}
+
+.mainPageFinishGuideUI {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'roboto-bold', serif;
+    color: var(--darkGray);
+    margin-bottom: 50px;
+}
+
+.mainPageFinishGuideMotto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'roboto-regular', serif;
+    color: var(--gray);
+}
+
+.mainPageFinishGuideButton {
+    width: 189px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkBlue);
+    color: var(--white);
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-family: 'roboto-medium', serif;
+    font-size: 14px;
+}
+.mainPageFinishGuideButton:hover {
+    width: 191px;
+    height: 34px;
+}
+
+@media screen and (max-width: 1290px) {
+    .mainPageSecond {
+        margin-top: 75px;
+    }
+}
+
+@media  screen and (max-width: 1024px) {
+    h1 {
+        font-size: 35px;
+        line-height: 40px;
+        width: 380px;
+    }
+
+    .largeP {
+        font-size: 16px;
+        line-height: 28px;
+        width: 380px;
+    }
+
+    .mainPageStartButtons {
+        gap: 23px;
+        margin-top: 8px;
+    }
+
+    .mainPageStartFirstButton {
+        width: 175px;
+        height: 36px;
+    }
+    .mainPageStartFirstButton:hover {
+        width: 177px;
+        height: 38px;
+    }
+   
+    .mainPageStartSecondButton {
+        width: 175px;
+        height: 36px;        
+    } 
+    .mainPageStartSecondButton:hover {
+        width: 177px;
+        height: 38px;
+    }
+
+    .mainPageSecond {
+        margin-top: 110px;
+    }
+
+    .mainPageSecondGuideText {  
+        h2 {
+            width: 400px;
+            font-size: 35px;
+            line-height: 40px;
+        }
+        p {
+            width: 400px;
+            font-size: 15px;
+            line-height: 26px;
+        }
+    }
+
+    .mainPageSecondTitlesTitle {
+        img {
+            width: 36px;
+            height: 36px;
+        }
+        h3 {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .mainPageSecondPicture {
+        img {
+            width: 450px;
+        }
+    }
+    
+    .mainPageThirdGuide {
+        h2 {
+            width: 400px;
+            font-size: 35px;
+            line-height: 40px;
+        }
+        p {
+            width: 400px;
+            font-size: 15px;
+            line-height: 26px;
+        }
+    }
+
+    .mainPageThirdPicture {
+        img {
+            width: 445px;
+            object-fit: contain;
+        }
+    }
+
+    .mainPageThirdGuideButton {
+        width: 182px;
+        height: 31px;
+    }
+    .mainPageThirdGuideButton:hover {
+        width: 184px;
+        height: 33px;
+    }
+
+    .mainPageFinishGradient {
+        height: 140px;
+    }
+    .mainPageFinishGuide {
+        padding: 140px;
+    }
+}
+
+@media  screen and (max-width: 910px) {
+    h1 {
+        font-size: 33px;
+        line-height: 40px;
+        width: 360px;
+    }
+
+    .largeP {
+        font-size: 16px;
+        line-height: 24px;
+        width: 360px;
+    }
+
+    .mainPageStartButtons {
+        gap: 20px;
+        margin-top: 6px;
+    }
+
+    .mainPageStartFirstButton {
+        width: 170px;
+        height: 34px;
+    }
+    .mainPageStartSecondButton {
+        width: 170px;
+        height: 34px;        
+        border: 2.4px, solid, var(--darkBlue);
+    } 
+    .mainPageStartFirstButton:hover {
+        width: 172px;
+        height: 36px;
+    }
+    .mainPageStartSecondButton:hover {
+        width: 172px;
+        height: 36px;
+    }
+
+    .mainPageSecond {
+        margin-top: 125px;
+    }
+
+    .mainPageSecondGuideText {  
+        h2 {
+            width: 400px;
+            font-size: 33px;
+            line-height: 40px;
+        }
+        p {
+            width: 400px;
+            font-size: 15px;
+            line-height: 26px;
+        }
+    }
+
+    .mainPageSecondTitlesTitle {
+        img {
+            width: 35px;
+            height: 35px;
+        }
+        h3 {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    .mainPageSecondPicture {
+        img {
+            width: 420px;
+        }
+    }
+
+    .mainPageThirdLines {
+        margin-top: 145px;
+    }
+
+    .mainPageThirdGuide {
+        h2 {
+            width: 400px;
+            font-size: 33px;
+            line-height: 40px;
+        }
+        p {
+            width: 400px;
+            font-size: 15px;
+            line-height: 26px;
+        }
+    }
+
+    .mainPageThirdPicture {
+        img {
+            width: 400px;
+        }
+    }
+
+    .mainPageThirdGuideButton {
+        width: 178px;
+        height: 30px;
+    }
+    .mainPageThirdGuideButton:hover {
+        width: 180px;
+        height: 32px;
+    }
+
+    .mainPageFinishGradient {
+        height: 130px;
+    }
+    .mainPageFinishGuide {
+        padding: 130px;
+    }
+}
+
+@media  screen and (max-width: 860px) {
+    h1 {
+        font-size: 30px;
+        line-height: 38px;
+        width: 320px;
+    }
+
+    .largeP {
+        font-size: 14px;
+        line-height: 24px;
+        width: 320px;
+    }
+
+    .mainPageStartButtons {
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    .mainPageStartFirstButton {
+        width: 150px;
+        height: 32px;
+    }
+    .mainPageStartSecondButton {
+        width: 150px;
+        height: 32px;        
+        border: 2.3px, solid, var(--darkBlue);
+    } 
+    .mainPageStartFirstButton:hover {
+        width: 152px;
+        height: 34px;
+    }
+    .mainPageStartSecondButton:hover {
+        width: 152px;
+        height: 34px;
+    }
+
+    .mainPageSecond {
+        margin-top: 160px;
+    }
+
+    .mainPageSecondGuideText {  
+        h2 {
+            width: 320px;
+            font-size: 30px;
+            line-height: 38px;
+        }
+        p {
+            width: 320px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+    
+    .mainPageSecondTitles {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+    }
+
+    .mainPageSecondTitlesTitle {
+        img {
+            width: 30px;
+            height: 30px;
+        }
+        h3 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        p {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    .mainPageSecondPicture {
+        img {
+            width: 400px;
+        }
+    }
+
+    .mainPageThirdLines {
+        margin-top: 135px;
+    }
+
+    .mainPageThirdGuide {
+        h2 {
+            width: 320px;
+            font-size: 30px;
+            line-height: 38px;
+        }
+        p {
+            width: 320px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+
+    .mainPageThirdPicture {
+        img {
+            width: 320px;
+        }
+    }
+
+    .mainPageThirdGuideButton {
+        width: 176px;
+        height: 28px;
+    }
+    .mainPageThirdGuideButton:hover {
+        width: 178px;
+        height: 30px;
+    }
+}
+
+@media  screen and (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+        line-height: 48px;
+        width: 420px;
+        margin-top: 100px;
+    }
+
+    .largeP {
+        font-size: 18px;
+        line-height: 32px;
+        width: 420px;
+    }
+
+    .mainPageStartButtons {
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    .mainPageStartFirstButton {
+        width: 189px;
+        height: 38px;
+    }
+    .mainPageStartSecondButton {
+        width: 189px;
+        height: 38px;   
+        border: 3px, solid, var(--darkBlue);  
+    } 
+    .mainPageStartFirstButton:hover {
+        width: 191px;
+        height: 40px;
+    }
+    .mainPageStartSecondButton:hover {
+        width: 191px;
+        height: 40px;
+    }
+    .mainPageStartImage {
+        img {
+            display: none;
+          }    
+    }
+    .mainPageSecond {
+        margin-top: 125px;
+    }
+
+    .mainPageSecondGuideText {  
+        h2 {
+            width: 420px;
+            font-size: 40px;
+            line-height: 38px;
+        }
+        p {
+            width: 420px;
+            font-size: 17.6px;
+            line-height: 24px;
+        }
+    }
+    
+    .mainPageSecondTitles {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+    }
+
+    .mainPageSecondTitlesTitle {
+        img {
+            width: 36px;
+            height: 36px;
+        }
+        h3 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+    .mainPageSecondPicture {
+        display: none;
+    }
+
+    .mainPageThirdLines {
+        margin-top: 120px;
+    }
+
+    .mainPageThirdGuide {
+        h2 {
+            width: 300px;
+            font-size: 30px;
+            line-height: 38px;
+        }
+        p {
+            width: 300px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+
+    .mainPageThirdPicture {
+        img {
+            width: 300px;
+        }
+    }
+}
+
+@media  screen and (max-width: 710px) {
+    h1 {
+        font-size: 34px;
+        line-height: 46px;
+        width: 380px;
+    }
+
+    .largeP {
+        font-size: 16px;
+        line-height: 24px;
+        width: 380px;
+    }
+
+    .mainPageStartButtons {
+        gap: 22px;
+        margin-top: 12px;
+    }
+
+    .mainPageStartFirstButton {
+        width: 178px;
+        height: 36px;
+    }
+    .mainPageStartSecondButton {
+        width: 178px;
+        height: 36px;   
+        border: 3px, solid, var(--darkBlue);  
+    }
+    .mainPageStartFirstButton:hover {
+        width: 180px;
+        height: 38px;
+    }
+    .mainPageStartSecondButton:hover {
+        width: 180px;
+        height: 38px;
+    } 
+
+    .mainPageSecond {
+        margin-top: 170px;
+    }
+
+    .mainPageSecondGuideText {  
+        h2 {
+            width: 380px;
+            font-size: 34px;
+            line-height: 34px;
+        }
+        p {
+            width: 380px;
+            font-size: 15.5px;
+            line-height: 24px;
+        }
+    }
+    
+    .mainPageSecondTitles {
+        width: 380px;
+    }
+
+    .mainPageSecondTitlesTitle {
+        img {
+            width: 34px;
+            height: 34px;
+        }
+        h3 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .mainPageThirdLines {
+        margin-top: 115px;
+    }
+
+    .mainPageFinishGradient {
+        height: 120px;
+    }
+    .mainPageFinishGuide {
+        padding: 120px;
+    }
+}
+
+@media  screen and (max-width: 650px) {
+    h1 {
+        font-size: 32px;
+        line-height: 46px;
+        width: 330px;
+    }
+
+    .largeP {
+        font-size: 14.4px;
+        line-height: 25px;
+        width: 330px;
+    }
+
+    .mainPageStartButtons {
+        gap: 14px;
+        margin-top: 25px;
+    }
+
+    .mainPageStartFirstButton {
+        width: 150px;
+        height: 34px;
+    }
+    .mainPageStartSecondButton {
+        width: 150px;
+        height: 34px;   
+        border: 2.4px, solid, var(--darkBlue);  
+    } 
+    .mainPageStartFirstButton:hover {
+        width: 152px;
+        height: 36px;
+    }
+    .mainPageStartSecondButton:hover {
+        width: 152px;
+        height: 36px;
+    }
+
+    .mainPageSecond {
+        margin-top: 170px;
+    }
+
+    .mainPageSecondGuideText {  
+        h2 {
+            width: 330px;
+            font-size: 32px;
+            line-height: 34px;
+        }
+        p {
+            width: 330px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+    
+    .mainPageSecondTitles {
+        width: 330px;
+    }
+
+    .mainPageSecondTitlesTitle {
+        img {
+            width: 34px;
+            height: 34px;
+        }
+        h3 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .mainPageThirdLines {
+        margin-top: 100px;
+    }
+
+    .mainPageThirdGuide {
+        h2 {
+            width: 300px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        p {
+            width: 300px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    .mainPageThirdPicture {
+        img {
+            width: 220px;
+        }
+    }
+
+    .mainPageThirdGuideButton {
+        width: 165px;
+        height: 26px;
+    }
+    .mainPageThirdGuideButton:hover {
+        width: 167px;
+        height: 28px;
+    }
+
+    .mainPageFinishGuide {
+        padding: 110px;
+        h2 {
+            font-size: 34px;
+        }   
+        .mainPageFinishGuideDiscription {
+            width: 500px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media  screen and (max-width: 550px) {
+    h1 {
+        font-size: 28px;
+        line-height: 42px;
+        width: 300px;
+    }
+
+    .largeP {
+        font-size: 14px;
+        line-height: 22px;
+        width: 300px;
+    }
+
+    .mainPageStartButtons {
+        gap: 14px;
+        margin-top: 25px;
+    }
+
+    .mainPageStartFirstButton {
+        width: 140px;
+        height: 32px;
+    }
+    .mainPageStartSecondButton {
+        width: 140px;
+        height: 32px;   
+        border: 2.3px, solid, var(--darkBlue);  
+    } 
+    .mainPageStartFirstButton:hover {
+        width: 142px;
+        height: 34px;
+    }
+    .mainPageStartSecondButton:hover {
+        width: 142px;
+        height: 34px;
+    }
+
+    .mainPageSecond {
+        margin-top: 200px;
+    }
+
+    .mainPageSecondGuideText {  
+        h2 {
+            width: 300px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        p {
+            width: 300px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    
+    .mainPageSecondTitles {
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .mainPageSecondTitlesTitle {
+        img {
+            width: 34px;
+            height: 34px;
+        }
+        h3 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .mainPageThirdLines {
+        margin-top: 80px;
+    }
+
+    .mainPageThirdGuide {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            width: 300px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        p {
+            width: 300px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+    .mainPageThirdPicture {
+        display: none;
+    }
+
+    .mainPageThirdGuideButton {
+        margin-left: auto;
+        width: 178px;
+        height: 30px;
+    }
+    .mainPageThirdGuideButton:hover {
+        width: 180px;
+        height: 34px;
+    }
+
+    .mainPageFinishGradient {
+        height: 110px;
+    }
+    .mainPageFinishGuide {
+        padding: 100px;
+        h2 {
+            width: 305px;
+            font-size: 28px;
+            line-height: 26px;
+        }   
+        .mainPageFinishGuideDiscription {
+            width: 315px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        span {
+            font-size: 45px;
+        }
+        .mainPageFinishGuideUI {
+            font-size: 15px;
+        }
+        .mainPageFinishGuideButton {
+            width: 178px;
+            height: 32px;
+        }
+        .mainPageFinishGuideButton:hover {
+            width: 180px;
+            height: 34px;
+        }
+    }
+}
+
+@media  screen and (max-width: 340px) {
+    h1 {
+        font-size: 24px;
+        line-height: 40px;
+        width: 250px;
+    }
+
+    .largeP {
+        font-size: 13px;
+        line-height: 20px;
+        width: 250px;
+    }
+
+    .mainPageStartButtons {
+        gap: 4px;
+        margin-top: 25px;
+    }
+
+    .mainPageStartFirstButton {
+        width: 120px;
+        height: 32px;
+    }
+    .mainPageStartFirstButtonText {
+        font-size: 14px;
+    }
+
+    .mainPageStartSecondButton {
+        width: 120px;
+        height: 32px;   
+        border: 2.3px, solid, var(--darkBlue);  
+    }
+    .mainPageStartSecondButtonText {
+        font-size: 14px;
+    }
+    .mainPageStartFirstButton:hover {
+        width: 122px;
+        height: 34px;
+    }
+    .mainPageStartSecondButton:hover {
+        width: 122px;
+        height: 32px;
+    }
+ 
+    .mainPageSecondGuideText {  
+        h2 {
+            width: 230px;
+            font-size: 23px;
+            line-height: 40px;
+        }
+        p {
+            width: 230px;
+            font-size: 13px;
+            line-height: 24px;
+        }
+    }
+    
+    .mainPageSecondTitles {
+        width: 230px;
+        margin-top: 10px;
+    }
+
+    .mainPageSecondTitlesTitle {
+        img {
+            width: 32px;
+            height: 32px;
+        }
+        h3 {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        p {
+            font-size: 12.5px;
+        }
+    }
+
+    .mainPageThirdLines {
+        margin-top: 60px;
+    }
+
+    .mainPageThirdGuide {
+        h2 {
+            width: 230px;
+            font-size: 23px;
+            line-height: 40px;
+        }
+        p {
+            width: 230px;
+            font-size: 13px;
+            line-height: 24px;
+        }
+    }
+
+    .mainPageThirdGuideButton {
+        width: 176px;
+        height: 30px;
+    }
+    .mainPageThirdGuideButton:hover {
+        width: 178px;
+        height: 32px;
+    }
+
+    .mainPageFinishGradient {
+        height: 100px;
+    }
+
+    .mainPageFinishGuide {
+        padding: 90px;
+        h2 {
+            width: 255px;
+            font-size: 23px;
+            line-height: 40px;
+        }   
+        .mainPageFinishGuideDiscription {
+            width: 270px;
+            font-size: 13px;
+            line-height: 24px;
+        }
+        .mainPageFinishGuideButton {
+            width: 176px;
+            height: 30px;
+        }
+        .mainPageFinishGuideButton:hover {
+            width: 178px;
+            height: 32px;
+        }
+    }
+}
