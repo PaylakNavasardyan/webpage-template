@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './Navbar.module.css'
-import { NavLink, Link, Outlet } from 'react-router-dom'
+import { NavLink, Link, Outlet, Route } from 'react-router-dom'
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -41,8 +41,8 @@ export default function Navbar() {
         <div className={classes.webNavbarLinks}>
           <ul>
             <li><NavLink className={classes.webNavbarLinksLink} to='/'>Home</NavLink></li>
-            <li><NavLink className={classes.webNavbarLinksLink} to='products'>Products</NavLink></li>
-            <li><NavLink className={classes.webNavbarLinksLink} to='about'>About</NavLink></li>
+            <li><NavLink className={classes.webNavbarLinksLink} to='/products'>Products</NavLink></li>
+            <li><NavLink className={classes.webNavbarLinksLink} to='/about'>About</NavLink></li>
           </ul>  
         </div>        
         <Outlet />

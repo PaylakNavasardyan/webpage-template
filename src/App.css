@@ -27,6 +27,8 @@ body {
   --yellow: #FFDA69FF;
   --gray: #A8AFCEFF;
   --darkGray: #60757CFF;
+  --coalGray: rgba(93, 105, 112, 1);
+  --purple: rgba(111, 124, 178, 1);
   --blue: #0148BEFF;
   --darkBlue: #131C60FF;
   --blackBlue: #00002CFF;

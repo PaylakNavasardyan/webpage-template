@@ -9,6 +9,7 @@ import Instagram from '../images/Instagram.svg';
 import LinkedIn from '../images/LinkedIn.svg';
 import Twitter from '../images/Twitter.svg';
 import YouTube from '../images/YouTube.svg';
+import phone from '../images/phone.svg';
 
 export default {
     firstMainPicture,
@@ -22,4 +23,5 @@ export default {
     LinkedIn,
     Twitter,
     YouTube,
+    phone,
 };
