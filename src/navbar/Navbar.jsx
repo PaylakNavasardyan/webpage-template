@@ -42,7 +42,7 @@ export default function Navbar() {
           <ul>
             <li><NavLink className={classes.webNavbarLinksLink} to='/'>Home</NavLink></li>
             <li><NavLink className={classes.webNavbarLinksLink} to='/products'>Products</NavLink></li>
-            <li><NavLink className={classes.webNavbarLinksLink} to='/about'>About</NavLink></li>
+            <li><NavLink className={classes.webNavbarLinksLink} to='/about'>About Us</NavLink></li>
           </ul>  
         </div>        
         <Outlet />

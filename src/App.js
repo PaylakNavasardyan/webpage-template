@@ -4,12 +4,13 @@ import Footer from './footer/Footer';
 import Mainpage from './mainpage/Mainpage';
 import Navbar from './navbar/Navbar';
 import Productspage from './productspage/Productspage';
+import Aboutus from './abutuspage/Aboutus';
 
 function App() {
   return (
     <div className="App">    
       <Routes>
-        <Route path={'/'} element={
+        <Route path={'/'} element = {
           <>
             <Navbar />
             <Mainpage />
@@ -17,7 +18,7 @@ function App() {
           </>
         } />
 
-        <Route path='/products' element={
+        <Route path='/products' element = {
           <>
             <Navbar />
             <Productspage />
@@ -25,7 +26,15 @@ function App() {
           </>
         } />
         
-        <Route path='*' element={
+        <Route path='/about' element = {
+          <>
+            <Navbar />
+            <Aboutus />
+            <Footer />
+          </>
+        } />
+        
+        <Route path='*' element = {
           <>
             <Navbar />
             <div><h2>Page is not found</h2></div>

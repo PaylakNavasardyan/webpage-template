@@ -10,6 +10,10 @@ import LinkedIn from '../images/LinkedIn.svg';
 import Twitter from '../images/Twitter.svg';
 import YouTube from '../images/YouTube.svg';
 import phone from '../images/phone.svg';
+import teamimage1 from '../images/teamimage1.svg';
+import teamimage2 from '../images/teamimage2.svg';
+import teamimage3 from '../images/teamimage3.svg';
+import teamimage4 from '../images/teamimage4.svg';
 
 export default {
     firstMainPicture,
@@ -24,4 +28,8 @@ export default {
     Twitter,
     YouTube,
     phone,
+    teamimage1,
+    teamimage2,
+    teamimage3,
+    teamimage4,
 };
