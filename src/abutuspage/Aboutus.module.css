@@ -92,3 +92,148 @@
         color: var(--coalGray);
     }
 }
+
+@media screen and (max-width: 800px) {        
+    .aboutUsPageOurTeamImage {
+        width: 90%;
+    }
+
+    .aboutUsPageGuide {
+        height: 750px;
+        h2 {
+            width: 90%;
+            font-size: 38px;
+            line-height: 40px;
+        }
+        p {
+            width: 90%;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .aboutUsPageOurTeam {
+        h2 {
+            font-size: 45px;
+            line-height: 150px;
+        }
+    }
+
+    .aboutUsPageOurTeamImage {
+        width: 100%;
+        flex-direction: column;
+        margin: 20px;
+        .aboutUsPageOurTeamImageTwo {
+            width: 550px;
+            height: 300px;
+        }
+        .aboutUsPageOurTeamImageThree {
+            width: 570px;
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .aboutUsPageOurTeam {
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .aboutUsPageOurTeamImage {
+        width: 80%;
+        .aboutUsPageOurTeamImageTwo {
+            width: 400px;
+            height: 280px;
+        }
+        .aboutUsPageOurTeamImageThree {
+            width: 400px;
+            height: 300px;
+        }
+    }
+
+    .aboutUsPageGuide {
+        height: 750px;
+        h2 {
+            width: 90%;
+            font-size: 36px;
+            line-height: 40px;
+        }
+        p {
+            width: 90%;
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .aboutUsPageOurTeam {
+        h2 {
+            font-size: 36px;
+            letter-spacing: 20px;
+        }
+    }
+
+    .aboutUsPageOurTeamImage {
+        width: 80%;
+        .aboutUsPageOurTeamImageTwo {
+            width: 340px;
+            height: 220px;
+        }
+        .aboutUsPageOurTeamImageThree {
+            width: 340px;
+            height: 220px;
+        }
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .aboutUsPageOurTeam {
+        h2 {
+            font-size: 32px;
+            letter-spacing: 18px;
+            line-height: 180px;
+        }
+    }
+
+    .aboutUsPageOurTeamImage {
+        width: 80%;
+        .aboutUsPageOurTeamImageTwo {
+            width: 260px;
+        }
+        .aboutUsPageOurTeamImageThree {
+            width: 260px;
+        }
+    }
+
+    .aboutUsPageGuide {
+        height: 1000px;
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .aboutUsPageOurTeam {
+        h2 {
+            font-size: 28px;
+            letter-spacing: 16px;
+        }
+    } 
+
+    .aboutUsPageOurTeamImage {
+        .aboutUsPageOurTeamImageTwo {
+            width: 220px;
+        }
+        .aboutUsPageOurTeamImageThree {
+            width: 220px;
+        }
+    }
+
+}
