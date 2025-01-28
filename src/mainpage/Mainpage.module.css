@@ -59,7 +59,7 @@ h1 {
 .mainPageStartFirstButtonText {
     color: var(--white);
     font-family: 'roboto-medium', serif;
-    font-size: 16px
+    font-size: 16px;
 }
 
 .mainPageStartSecondButton {

@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../exportImages/ExportImage';
 import classes from './Mainpage.module.css';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Mainpage() {
   return (
@@ -13,7 +14,12 @@ export default function Mainpage() {
 
           <div className={classes.mainPageStartButtons}>
             <button className={classes.mainPageStartFirstButton}><p className={classes.mainPageStartFirstButtonText}>Purchase UI Kit</p></button>
-            <button className={classes.mainPageStartSecondButton}><p className={classes.mainPageStartSecondButtonText}>Learn More</p></button>
+            <HashLink smooth to='/about#learnMore'>
+              <button className={classes.mainPageStartSecondButton}>
+                <p className={classes.mainPageStartSecondButtonText}>
+                Learn More </p>
+              </button>
+            </HashLink>
           </div>
         </div>
 

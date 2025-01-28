@@ -19,7 +19,7 @@ export default function Aboutus() {
       </div>
 
       <div className={classes.aboutUsPageGuide}>
-        <h2>Introduce Your Product Quickly & Effectively</h2>
+        <h2 id='learnMore'>Introduce Your Product Quickly & Effectively</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt quia quam, exercitationem officiis eos iure sit fugit architecto eum illum quasi ducimus accusamus, delectus beatae animi veniam ipsa. Provident dolorem veniam quasi ipsam, vitae beatae praesentium qui possimus consectetur ? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aliquid distinctio maiores commodi animi expedita provident aliquam, suscipit architecto unde repudiandae dignissimos tenetur, deleniti vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quaerat, itaque, perferendis velit et pariatur facere quisquam quibusdam, ex debitis sint. Iure ipsum voluptas ipsam.</p>
       </div>
     </div>
