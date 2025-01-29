@@ -5,6 +5,7 @@ import Mainpage from './mainpage/Mainpage';
 import Navbar from './navbar/Navbar';
 import Productspage from './productspage/Productspage';
 import Aboutus from './abutuspage/Aboutus';
+import Contactus from './contactuspage/Contactus';
 
 function App() {
   return (
@@ -34,6 +35,14 @@ function App() {
             </>
           } />
           
+          <Route path='/contact' element = {
+            <>
+              <Navbar />
+              <Contactus />
+              <Footer />
+            </>
+          } />
+
           <Route path='*' element = {
             <>
               <Navbar />

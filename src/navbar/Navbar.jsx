@@ -52,9 +52,11 @@ export default function Navbar() {
             <p className={classes.webNavbarButtonsFirstButtonText}>Purchase UI Kit</p>
           </button>
 
-          <button className={classes.webNavbarButtonsSecondButton}>
-            <p className={classes.webNavbarButtonsSecondButtonText}>Contact Us</p>
-          </button>
+          <NavLink to='/contact'>
+            <button className={classes.webNavbarButtonsSecondButton}>
+              <p className={classes.webNavbarButtonsSecondButtonText}>Contact Us</p>
+            </button> 
+          </NavLink>
         </div>
       </div>
     </nav>

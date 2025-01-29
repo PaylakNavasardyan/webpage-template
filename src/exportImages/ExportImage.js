@@ -14,6 +14,9 @@ import teamimage1 from '../images/teamimage1.svg';
 import teamimage2 from '../images/teamimage2.svg';
 import teamimage3 from '../images/teamimage3.svg';
 import teamimage4 from '../images/teamimage4.svg';
+import home from '../images/home.svg';
+import phoneCall from '../images/phoneCall.svg';
+import email from '../images/email.svg';
 
 export default {
     firstMainPicture,
@@ -32,4 +35,7 @@ export default {
     teamimage2,
     teamimage3,
     teamimage4,
+    home,
+    phoneCall,
+    email,
 };
