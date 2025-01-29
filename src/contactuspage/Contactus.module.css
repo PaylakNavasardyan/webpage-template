@@ -138,6 +138,7 @@
     }
    }
    button {
+    width: 100%;
     height: 45px;
     font-family: 'roboto-medium', serif;
     font-size: 22px;

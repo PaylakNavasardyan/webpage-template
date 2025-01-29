@@ -6,6 +6,7 @@ import Navbar from './navbar/Navbar';
 import Productspage from './productspage/Productspage';
 import Aboutus from './abutuspage/Aboutus';
 import Contactus from './contactuspage/Contactus';
+import Login from './loginpage/Login';
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
               <Footer />
             </>
           } />
+
+          <Route path='LogIn' element = {<Login />} />
 
           <Route path='*' element = {
             <>

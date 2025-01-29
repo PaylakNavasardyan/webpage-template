@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './Navbar.module.css'
-import { NavLink, Link, Outlet, Route } from 'react-router-dom'
+import { NavLink, Link, Outlet } from 'react-router-dom'
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -45,18 +45,21 @@ export default function Navbar() {
             <li><NavLink className={classes.webNavbarLinksLink} to='/about'>About Us</NavLink></li>
           </ul>  
         </div>        
-        <Outlet />
-
+        
         <div className={classes.webNavbarButtons}>
-          <button className={classes.webNavbarButtonsFirstButton}>
-            <p className={classes.webNavbarButtonsFirstButtonText}>Purchase UI Kit</p>
-          </button>
-
+          <NavLink to='/LogIn'>
+            <button className={classes.webNavbarButtonsFirstButton}>
+              <p className={classes.webNavbarButtonsFirstButtonText}>Purchase UI Kit</p>
+            </button>
+          </NavLink>
+          
           <NavLink to='/contact'>
             <button className={classes.webNavbarButtonsSecondButton}>
               <p className={classes.webNavbarButtonsSecondButtonText}>Contact Us</p>
             </button> 
           </NavLink>
+
+          <Outlet />
         </div>
       </div>
     </nav>

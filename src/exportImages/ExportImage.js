@@ -17,6 +17,9 @@ import teamimage4 from '../images/teamimage4.svg';
 import home from '../images/home.svg';
 import phoneCall from '../images/phoneCall.svg';
 import email from '../images/email.svg';
+import user from '../images/user.svg';
+import lock from '../images/lock.svg';
+import background from '../images/background.jpg';
 
 export default {
     firstMainPicture,
@@ -38,4 +41,7 @@ export default {
     home,
     phoneCall,
     email,
+    user,
+    lock,
+    background,
 };

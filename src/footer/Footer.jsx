@@ -1,7 +1,7 @@
 import React from 'react';
 import image from '../exportImages/ExportImage';
 import classes from './Footer.module.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -9,8 +9,11 @@ export default function Footer() {
         <div className={classes.mainPageFooterDetails}>
             <p>&copy;2023 Yourcompany</p>
             <h3><Link className={classes.mainPageFooterName} to='/'>Landing</Link></h3>
-            <button className={classes.mainPageFooterButton}>Purchase Now</button>
+             <NavLink to='/LogIn'>
+                <button className={classes.mainPageFooterButton}>Loge In</button>
+            </NavLink>
         </div>
+        <Outlet />
 
         <div className={classes.mainPageFooterLine}></div>
 

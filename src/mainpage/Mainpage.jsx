@@ -2,6 +2,7 @@ import React from 'react';
 import image from '../exportImages/ExportImage';
 import classes from './Mainpage.module.css';
 import { HashLink } from 'react-router-hash-link';
+import { NavLink, Outlet } from 'react-router-dom';
 
 export default function Mainpage() {
   return (
@@ -13,7 +14,9 @@ export default function Mainpage() {
           <p className={classes.largeP}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt quia quam, exercitationem officiis eos iure sit fugit architecto eum illum quasi ducimus accusamus, delectus beatae animi veniam ipsa.<br /><br /> Provident dolorem veniam quasi ipsam, vitae beatae praesentium qui possimus consectetur ?</p>
 
           <div className={classes.mainPageStartButtons}>
-            <button className={classes.mainPageStartFirstButton}><p className={classes.mainPageStartFirstButtonText}>Purchase UI Kit</p></button>
+            <NavLink to='/LogIn'>
+              <button className={classes.mainPageStartFirstButton}><p className={classes.mainPageStartFirstButtonText}>Purchase UI Kit</p></button>
+            </NavLink>
             <HashLink smooth to='/about#learnMore'>
               <button className={classes.mainPageStartSecondButton}>
                 <p className={classes.mainPageStartSecondButtonText}>
@@ -86,8 +89,10 @@ export default function Mainpage() {
           <div className={classes.mainPageThirdGuide}>
             <h2>Light, Fast & Powerful</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt quia quam, exercitationem officiis eos iure sit fugit architecto eum illum quasi ducimus accusamus.<br /><br /> Provident dolorem veniam quasi ipsam, vitae beatae praesentium qui possimus ?</p>
-
-            <button className={classes.mainPageThirdGuideButton}>Purchase Now</button>
+            
+            <NavLink to='/LogIn'>
+              <button className={classes.mainPageThirdGuideButton}>Purchase Now</button>
+            </ NavLink>          
           </div>
         </div>
       </div>
@@ -102,9 +107,13 @@ export default function Mainpage() {
             <p className={classes.mainPageFinishGuideUI}>UI Design Kit</p>
 
             <p className={classes.mainPageFinishGuideMotto}>See, One price. Simple.</p>
-            <button className={classes.mainPageFinishGuideButton}>Purchase Now</button>
+            <NavLink to='/LogIn'>
+              <button className={classes.mainPageFinishGuideButton}>Purchase Now</button>
+            </NavLink>
         </div>
       </div>
+
+      <Outlet />
     </div>
   );
 }
