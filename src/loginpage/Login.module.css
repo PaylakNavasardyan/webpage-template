@@ -103,8 +103,6 @@ button {
     cursor: pointer;
 }
 
-
-
 .loginPageAccount {
     width: 55%;
     margin-top: 25px;
@@ -120,5 +118,114 @@ button {
     }
     a:hover {
         color: var(--yellow)
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .loginPageBorder {
+        width: 400px;
+        height: 530px;
+    }
+
+    .loginPageInputsInput {
+        img {
+            transform: translateX(500%);
+        }
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    .loginPageBorder {
+        width: 350px;
+    }
+
+    .loginPageInputsInput {
+        img {
+            transform: translateX(450%);
+        }
+    }
+
+    .loginPageAccount {
+        width: 70%;
+        span {
+            font-size: 15px;
+        }
+        a {
+            font-size: 15px;
+        }
+    }
+}
+
+@media  screen and (max-width: 410px) {
+    .loginPageBorder {
+        width: 300px;
+        height: 500px;
+    }
+
+    .loginPageInputsInput {
+        img {
+            transform: translateX(360%);
+        }
+    }
+
+    .loginPageRememberPassword {
+        span {
+            font-size: 14px;
+        }
+    
+        a {
+            font-size: 14px;
+        }
+    }
+    
+    button {
+        font-size: 18px;
+    }
+    
+    .loginPageAccount {
+        width: 72%;
+        span {
+            font-size: 14px;
+        }
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+@media  screen and (max-width: 340px) {
+    .loginPageBorder {
+        width: 260px;
+        height: 480px;
+    }
+
+    .loginPageInputsInput {
+        img {
+            transform: translateX(300%);
+        }
+    }
+
+    .loginPageRememberPassword {
+        span {
+            font-size: 12px;
+        }
+    
+        a {
+            font-size: 12px;
+        }
+    }
+    
+    button {
+        font-size: 16px;
+    }
+    
+    .loginPageAccount {
+        width: 70%;
+        span {
+            font-size: 12px;
+        }
+        a {
+            font-size: 12px;
+        }
     }
 }
