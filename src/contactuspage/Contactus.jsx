@@ -45,7 +45,7 @@ export default function Contactus() {
                 </div>
             </div>
 
-            <div className={classes.ContactuspageContactsMessage}>
+            <div className={classes.contactuspageContactsMessage}>
                 <h3>Send Message</h3>
                 <form>
                     <input type="text" placeholder='Full Name' required/>

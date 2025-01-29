@@ -99,7 +99,7 @@
     transform: scale(1.04);
 }
 
-.ContactuspageContactsMessage {
+.contactuspageContactsMessage {
    width: 80%;
    height: 375px;
    background-color: var(--white);
@@ -154,4 +154,95 @@
    button:focus {
     transform: scale(1);
    }
+}
+
+@media screen and (max-width: 1000px) {
+    .iconBorder {
+        width: 70px;
+        height: 70px;
+        img {
+            width: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contactuspageContacts {
+        flex-direction: column;
+        height: 850px;
+    }
+
+    .contactuspageContactsContact {
+        flex-direction: row;
+    }
+
+    .contactuspageContactsContactSocial {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+    
+    .iconBorder {
+        width: 80px;
+        height: 80px;
+        img {
+            width: 30px;
+        }
+    }
+
+    .iconBorderText {
+        width: 100%;
+    }
+
+    .contactuspageContactsMessage {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .contactuspageContacts {
+        height: 1250px;
+    }
+
+    .contactuspageContactsContact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .iconBorderText {
+        width: 200px;
+    }
+
+    .contactuspageContactsMessage {
+        margin-top: 250px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contactUsPageGuide {
+        height: 500px;
+        h2 {
+            font-size: 36px;
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .contactUsPageGuide {
+        margin: 50px 0 50px 0 ;
+    }
+
+    .contactuspageContactsContactSocial {
+        margin-bottom: 20px;
+    }
+
+    .contactuspageContactsMessage {
+        width: 80%;
+        h3 {
+            font-size: 24px;
+        }
+    }
 }
