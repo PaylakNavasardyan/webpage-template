@@ -22,6 +22,44 @@
     backdrop-filter: blur(30px);
     border: 2px solid var(--white);
     border-radius: 15px;
+    transition: translate .2s ease;
+    h2 {
+        font-family: 'roboto-bold', serif;
+        font-size: 35px;
+        margin-bottom: 55px;
+        color: var(--white);
+    }
+}
+
+.loginPage.active .loginPageBorder {
+    transform: none;
+    translate: -500px;
+    display: none;
+}
+
+.loginPage.active .registerPageBorder {
+    transition: none;
+    translate: 0;
+    display: flex;
+}
+
+.registerPageBorder {
+    display: none;
+    width: 450px;
+    height: 550px;
+    display: flex none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    border: 2px solid var(--white);
+    border-radius: 15px;
+    position: absolute;
+    translate: 500px;
+    transform: none;
+    translate: 500px;
+    transform: none;
     h2 {
         font-family: 'roboto-bold', serif;
         font-size: 35px;
@@ -127,6 +165,11 @@ button {
         height: 530px;
     }
 
+    .registerPageBorder {
+        width: 400px;
+        height: 530px;
+    }
+
     .loginPageInputsInput {
         img {
             transform: translateX(500%);
@@ -136,6 +179,10 @@ button {
 
 @media  screen and (max-width: 480px) {
     .loginPageBorder {
+        width: 350px;
+    }
+
+    .registerPageBorder {
         width: 350px;
     }
 
@@ -161,6 +208,11 @@ button {
         width: 300px;
         height: 500px;
     }
+
+    .registerPageBorder {
+        width: 300px;
+        height: 500px;
+    }    
 
     .loginPageInputsInput {
         img {
@@ -195,6 +247,11 @@ button {
 
 @media  screen and (max-width: 340px) {
     .loginPageBorder {
+        width: 260px;
+        height: 480px;
+    }
+
+    .registerPageBorder {
         width: 260px;
         height: 480px;
     }
