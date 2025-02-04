@@ -21,7 +21,7 @@ async function sendPost(userName, password, navigate) {
         const data = await response.json();
         localStorage.setItem("token", data.token);
         console.log("login succesfull", data);
-        navigate('/products')
+        navigate('/purchase')
     } catch (error) {
         console.error("error:", error.message);
     }

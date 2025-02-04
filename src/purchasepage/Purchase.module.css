@@ -1,0 +1,102 @@
+.purchasePage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.purchasePagePrice {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(to top, var(--white), var(--aqua));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span {
+        font-family: 'roboto-bold', serif;
+        color: var(--blackBlue);
+        font-size: 70px;
+    }
+    p {
+        font-family: 'roboto-regular', serif;
+        color: var(--coalGray);
+        font-size: 35px;
+        letter-spacing: 12px;
+    }
+}
+
+.purchasePageExamples {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    span {
+        font-family: 'roboto-medium', solid;
+        font-size: 25px;
+        color: var(--darkBlue);
+        letter-spacing: 10px;
+    }
+}
+
+.purchasePageExamplesImg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 85px;
+        margin: 50px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .purchasePageExamples {
+        height: 500px;
+    }
+
+    .purchasePageExamplesImg {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .purchasePagePrice {
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .purchasePageExamplesImg {
+        img {
+            width: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .purchasePageExamples {
+        height: 650px;
+        span {
+            text-align: center;
+        }
+    }
+
+    .purchasePageExamplesImg {
+        grid-template-columns: auto auto;
+        img {
+            width: 60px;
+        }
+    }
+}

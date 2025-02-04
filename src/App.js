@@ -8,12 +8,13 @@ import Aboutus from './abutuspage/Aboutus';
 import Contactus from './contactuspage/Contactus';
 import Login from './loginpage/Login';
 import ScrollToTop from './ScrollToTop';
+import Purchase from './purchasepage/Purchase';
 
 function App() {
   return (
     <div className="App">    
       <ScrollToTop />
-      
+
       <Routes>       
         <Route path={'/'} element = {
           <>
@@ -49,12 +50,21 @@ function App() {
 
           <Route path='LogIn' element = {<Login />} />
 
+          <Route path='/purchase' element = {
+            <>
+              <Navbar />  
+              <Purchase />
+              <Footer />
+            </>
+          } />
+
           <Route path='*' element = {
             <>
               <Navbar />
               <div><h2>Page is not found</h2></div>
             </>
           } />
+          
       </Routes>
     </div>    
   );
