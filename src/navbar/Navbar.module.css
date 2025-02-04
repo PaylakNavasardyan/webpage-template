@@ -170,8 +170,7 @@
     .webNavbarLinksLink {
         color: var(--white);
     }
-    .webNavbarButtonsFirstButton {
-        
+    .webNavbarButtonsFirstButton { 
         background: var(--white);
     }
     .webNavbarButtonsFirstButtonText {
@@ -190,6 +189,7 @@
         top: 0; 
         left: 0;
         background: var(--darkBlue);
+        position: fixed;
     }
     
     .webNavbarLinksDelete {
