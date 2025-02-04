@@ -7,10 +7,13 @@ import Productspage from './productspage/Productspage';
 import Aboutus from './abutuspage/Aboutus';
 import Contactus from './contactuspage/Contactus';
 import Login from './loginpage/Login';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <div className="App">    
+      <ScrollToTop />
+      
       <Routes>       
         <Route path={'/'} element = {
           <>
