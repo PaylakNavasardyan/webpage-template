@@ -29,7 +29,7 @@ export default function Navbar() {
     } else {
         console.log('Please register');
     };
-};
+  };
 
   return (
     <nav className={classes.webNavbar}>

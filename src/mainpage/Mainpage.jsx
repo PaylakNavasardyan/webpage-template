@@ -2,9 +2,21 @@ import React from 'react';
 import image from '../exportImages/ExportImage';
 import classes from './Mainpage.module.css';
 import { HashLink } from 'react-router-hash-link';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 export default function Mainpage() {
+  const navigate = useNavigate();
+
+  const existedUser = () => {
+    let userToken = localStorage.getItem('token');
+
+    if (userToken) {
+        navigate('/purchase');
+    } else {
+        console.log('Please register');
+    };
+  };
+
   return (
     <div className={classes.mainPage}>
       <div className={classes.mainPageStart}>
@@ -14,9 +26,8 @@ export default function Mainpage() {
           <p className={classes.largeP}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt quia quam, exercitationem officiis eos iure sit fugit architecto eum illum quasi ducimus accusamus, delectus beatae animi veniam ipsa.<br /><br /> Provident dolorem veniam quasi ipsam, vitae beatae praesentium qui possimus consectetur ?</p>
 
           <div className={classes.mainPageStartButtons}>
-            <NavLink to='/LogIn'>
-              <button className={classes.mainPageStartFirstButton}><p className={classes.mainPageStartFirstButtonText}>Purchase UI Kit</p></button>
-            </NavLink>
+            <button className={classes.mainPageStartFirstButton} onClick={() => existedUser ? navigate('/purchase') : navigate('/login')}><p className={classes.mainPageStartFirstButtonText}>Purchase UI Kit</p></button>
+
             <HashLink smooth to='/about#learnMore'>
               <button className={classes.mainPageStartSecondButton}>
                 <p className={classes.mainPageStartSecondButtonText}>
@@ -89,10 +100,8 @@ export default function Mainpage() {
           <div className={classes.mainPageThirdGuide}>
             <h2>Light, Fast & Powerful</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt quia quam, exercitationem officiis eos iure sit fugit architecto eum illum quasi ducimus accusamus.<br /><br /> Provident dolorem veniam quasi ipsam, vitae beatae praesentium qui possimus ?</p>
-            
-            <NavLink to='/LogIn'>
-              <button className={classes.mainPageThirdGuideButton}>Purchase Now</button>
-            </ NavLink>          
+          
+            <button className={classes.mainPageThirdGuideButton} onClick={() => existedUser ? navigate('/purchase') : navigate('/login')}>Purchase Now</button>
           </div>
         </div>
       </div>
@@ -107,9 +116,7 @@ export default function Mainpage() {
             <p className={classes.mainPageFinishGuideUI}>UI Design Kit</p>
 
             <p className={classes.mainPageFinishGuideMotto}>See, One price. Simple.</p>
-            <NavLink to='/LogIn'>
-              <button className={classes.mainPageFinishGuideButton}>Purchase Now</button>
-            </NavLink>
+            <button className={classes.mainPageFinishGuideButton} onClick={() => existedUser ? navigate('/purchase') : navigate('/login')}>Purchase Now</button>
         </div>
       </div>
 
