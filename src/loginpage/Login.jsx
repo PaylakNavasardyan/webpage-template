@@ -27,7 +27,7 @@ async function sendPost(userName, password, navigate) {
     }
 }
 
-async function registerUser(userName, email, password) {
+async function registerUser(userName, email, password, navigate) {
     try {
         const response = await fetch('http://localhost:8080/register', {
             method: 'POST',
@@ -40,6 +40,7 @@ async function registerUser(userName, email, password) {
         const data = await response.json();
         document.cookie = 'register=data.token'
         console.log(data.message);
+        navigate('/purchase');
     } catch (error) {
         console.error("error:", error.message);
     }
@@ -174,7 +175,7 @@ export default function Login() {
                 </label>
             </div>        
             
-            <button onClick={() => registerUser(userName, email, password)}>Register</button>
+            <button onClick={() => {registerUser(userName, email, password, navigate)}}>Register</button>
 
             <div className={classes.loginPageAccount}>
                 <span>Already have an account?</span>

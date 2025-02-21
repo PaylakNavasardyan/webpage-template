@@ -1,11 +1,13 @@
 import React from 'react'
 import classes from './Navbar.module.css'
-import { NavLink, Link, Outlet } from 'react-router-dom'
+import { NavLink, Link, Outlet, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const [deleteMenu, setDeleteMenu] = useState(false);
+
+  const navigate = useNavigate();
 
   const toggleOpenMenu = () => {
     setOpenMenu((open) => !open);
@@ -18,7 +20,17 @@ export default function Navbar() {
     } 
     setDeleteMenu(false);
   }
- 
+
+  const existedUser = () => {
+    let userToken = localStorage.getItem('token');
+
+    if (userToken) {
+        navigate('/purchase');
+    } else {
+        console.log('Please register');
+    };
+};
+
   return (
     <nav className={classes.webNavbar}>
       <div className={classes.webNavbarTitle}>
@@ -47,15 +59,19 @@ export default function Navbar() {
         </div>        
         
         <div className={classes.webNavbarButtons}>
-          <NavLink to='/LogIn'>
-            <button className={classes.webNavbarButtonsFirstButton}>
-              <p className={classes.webNavbarButtonsFirstButtonText}>Purchase UI Kit</p>
-            </button>
-          </NavLink>
-          
+          <button className={classes.webNavbarButtonsFirstButton} onClick={() => existedUser ? navigate('/purchase') : navigate('/login')}>
+            <p className={classes.webNavbarButtonsFirstButtonText}>Purchase UI Kit</p>
+          </button>
+       
           <NavLink to='/contact'>
             <button className={classes.webNavbarButtonsSecondButton}>
               <p className={classes.webNavbarButtonsSecondButtonText}>Contact Us</p>
+            </button> 
+          </NavLink>
+
+          <NavLink to='/login'>
+            <button className={classes.webNavbarButtonsFirstButton}>
+              <p className={classes.webNavbarButtonsFirstButtonText}>Login</p>
             </button> 
           </NavLink>
 
